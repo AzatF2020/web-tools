@@ -1,13 +1,9 @@
-import { useEffect, useState } from 'react';
-import BaseButton from '@/core/components/BaseButton/ui/BaseButton';
+import { BaseButton } from '@/core/components/BaseButton';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      {count}
-      <BaseButton label="Нажми на меня" onClick={() => console.log('hello world')} />
+      <BaseButton variant="primary" label="Нажми на меня" />
     </>
   );
 }
