@@ -1,0 +1,79 @@
+.button {
+  background-color: transparent;
+
+  cursor: pointer;
+
+  border-radius: var(--border-radius);
+  border: none;
+
+  &--sm {
+    padding: 0.5rem 1rem;
+
+    font-size: var(--font-size-h6);
+  }
+
+  &--md {
+    padding: 0.75rem 1.5rem;
+
+    font-size: var(--font-size-h4);
+  }
+
+  &--lg {
+    padding: 1rem 2rem;
+
+    font-size: var(--font-size-h2);
+  }
+
+  &--primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--color-blue-denim);
+      }
+    }
+  }
+
+  &--secondary {
+    color: var(--color-gray);
+    background-color: var(--color-secondary);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--color-crayola);
+      }
+    }
+  }
+
+  &--outlined {
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 0.15rem solid var(--color-primary);
+    font-weight: var(--font-weight-medium);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--color-light-blue);
+      }
+    }
+  }
+
+  &--link {
+    color: var(--color-primary);
+    background-color: transparent;
+
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    opacity: var(--opacity-disabled);
+  }
+}

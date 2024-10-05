@@ -1,0 +1,39 @@
+{
+  "generatedAt": 1728142949786,
+  "hasCustomBabel": false,
+  "hasCustomWebpack": false,
+  "hasStaticDirs": false,
+  "hasStorybookEslint": true,
+  "refCount": 0,
+  "testPackages": {
+    "@testing-library/jest-dom": "6.5.0",
+    "@testing-library/react": "16.0.1",
+    "@testing-library/user-event": null,
+    "@types/jest": "29.5.13",
+    "vitest": "2.1.2"
+  },
+  "packageManager": { "type": "npm", "version": "10.8.1" },
+  "typescriptOptions": { "reactDocgen": "react-docgen-typescript" },
+  "framework": { "name": "@storybook/react-vite", "options": {} },
+  "builder": "@storybook/builder-vite",
+  "renderer": "@storybook/react",
+  "portableStoriesFileCount": 0,
+  "storybookVersion": "8.3.4",
+  "storybookVersionSpecifier": "^8.3.4",
+  "language": "typescript",
+  "storybookPackages": {
+    "@chromatic-com/storybook": { "version": "1.9.0" },
+    "@storybook/addon-interactions": { "version": "8.3.4" },
+    "@storybook/addon-onboarding": { "version": "8.3.4" },
+    "@storybook/blocks": { "version": "8.3.4" },
+    "@storybook/react": { "version": "8.3.4" },
+    "@storybook/react-vite": { "version": "8.3.4" },
+    "@storybook/test": { "version": "8.3.4" },
+    "eslint-plugin-storybook": { "version": "0.9.0" },
+    "storybook": { "version": "8.3.4" }
+  },
+  "addons": {
+    "@storybook/addon-links": { "version": "8.3.4" },
+    "@storybook/addon-essentials": { "version": "8.3.4" }
+  }
+}
