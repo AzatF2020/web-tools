@@ -1,18 +1,10 @@
 .input {
-  border: 0.1rem solid var(--color-primary-400);
-  font-weight: var(--font-weight-regular);
-  border-radius: 2rem;
-
-  outline: none;
-
-  line-height: var(--line-height-h6);
   color: var(--color-text);
-
-  @media (hover: hover) {
-    &:hover {
-      border-color: var(--color-primary-500);
-    }
-  }
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-h6);
+  border: 0.1rem solid var(--color-primary-600);
+  border-radius: 0.5rem;
+  outline: none;
 
   &:focus {
     border-color: var(--color-primary-700);

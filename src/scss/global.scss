@@ -1,8 +1,8 @@
-@import './config/normalize.scss';
-@import './config/root.scss';
-@import './config/fonts.scss';
+@import './config/normalize';
+@import './config/root';
+@import './config/fonts';
 
 body {
-  font-family: var(--font-family);
   font-weight: var(--font-weight-regular);
+  font-family: var(--font-family);
 }

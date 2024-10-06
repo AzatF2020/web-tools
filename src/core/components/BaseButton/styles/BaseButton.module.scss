@@ -1,36 +1,31 @@
 .button {
   background-color: transparent;
-
-  cursor: pointer;
-
-  border-radius: var(--border-radius);
   border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
 
   &--sm {
     padding: 0.5rem 1rem;
-
     font-size: var(--font-size-h6);
   }
 
   &--md {
     padding: 0.75rem 1.5rem;
-
     font-size: var(--font-size-h4);
   }
 
   &--lg {
     padding: 1rem 2rem;
-
     font-size: var(--font-size-h2);
   }
 
   &--primary {
     color: var(--color-white);
-    background-color: var(--color-primary-700);
+    background-color: var(--color-primary-600);
 
     @media (hover: hover) {
       &:hover {
-        background-color: var(--color-blue-denim);
+        background-color: var(--color-primary-700);
       }
     }
   }
@@ -48,9 +43,9 @@
 
   &--outlined {
     color: var(--color-primary-700);
+    font-weight: var(--font-weight-medium);
     background-color: transparent;
     border: 0.15rem solid var(--color-primary-700);
-    font-weight: var(--font-weight-medium);
 
     @media (hover: hover) {
       &:hover {
@@ -72,8 +67,7 @@
 
   &[disabled] {
     cursor: not-allowed;
-    pointer-events: none;
-
     opacity: var(--opacity-disabled);
+    pointer-events: none;
   }
 }
