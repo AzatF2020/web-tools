@@ -4,6 +4,7 @@ class BaseButtonModel {
   label?: string;
   size?: TButtonSize;
   variant?: TButtonVariant;
+  className?: string;
 }
 
 export default BaseButtonModel;
