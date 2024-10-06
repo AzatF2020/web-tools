@@ -26,7 +26,7 @@
 
   &--primary {
     color: var(--color-white);
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-700);
 
     @media (hover: hover) {
       &:hover {
@@ -47,9 +47,9 @@
   }
 
   &--outlined {
-    color: var(--color-primary);
+    color: var(--color-primary-700);
     background-color: transparent;
-    border: 0.15rem solid var(--color-primary);
+    border: 0.15rem solid var(--color-primary-700);
     font-weight: var(--font-weight-medium);
 
     @media (hover: hover) {
@@ -60,7 +60,7 @@
   }
 
   &--link {
-    color: var(--color-primary);
+    color: var(--color-primary-700);
     background-color: transparent;
 
     @media (hover: hover) {

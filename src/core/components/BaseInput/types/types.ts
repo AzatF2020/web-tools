@@ -1,6 +1,8 @@
-import type { HTMLInputAttributes } from 'react';
-import BaseInputModel from '@/core/models/BaseButtonModel/BaseButtonModel.ts';
+import type { InputHTMLAttributes } from 'react';
+import BaseInputModel from '@/core/models/BsseInputModel/BaseInputModel';
 
-interface IBaseInputProps extends BaseInputModel, HTMLInputAttributes<HTMLInputElement> {}
+interface IBaseInputProps
+  extends BaseInputModel,
+    Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {}
 
 export type { IBaseInputProps };

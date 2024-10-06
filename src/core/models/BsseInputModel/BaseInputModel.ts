@@ -1,8 +1,8 @@
-import type { TBaseInputSize } from '@/core/components/BaseInput/types';
+import type { TBaseInputSize } from '@/core/models/BsseInputModel/types';
 
 class BaseInputModel {
   invalid?: boolean;
-  size?: TBaseInputSize;
+  size?: TBaseInputSize | number;
   className?: string;
 }
 

@@ -4,7 +4,7 @@ import styles from '@/core/components/BaseInput/styles/BaseInput.module.scss';
 import clsx from 'clsx';
 
 const BaseInput: FC<IBaseInputProps> = ({
-  type,
+  type = 'text',
   size = 'md',
   invalid = false,
   className,

@@ -5,8 +5,8 @@ import styles from './app.module.css';
 function App() {
   return (
     <>
-      <BaseButton variant="primary" label="Нажми на меня" />
-      <BaseInput className={styles.input_base} />
+      <BaseButton variant="primary" label="Нажми на меня" size="sm" />
+      <BaseInput className={styles.input_base} size="sm" />
     </>
   );
 }
