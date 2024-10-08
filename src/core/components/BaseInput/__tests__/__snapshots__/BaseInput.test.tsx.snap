@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BaseInput test component > should render component with default props 1`] = `
+<input
+  class="input input--md"
+  name="text"
+  placeholder="Write text"
+  type="text"
+  value="text for test"
+/>
+`;

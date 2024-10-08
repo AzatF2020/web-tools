@@ -4,10 +4,10 @@ import styles from './app.module.css';
 
 function App() {
   return (
-    <>
-      <BaseButton variant="primary" label="Нажми на меня" size="sm" />
-      <BaseInput className={styles.input_base} size="sm" />
-    </>
+    <div style={{ padding: '1rem' }}>
+      <BaseButton variant="primary" label="Нажми на меня" />
+      <BaseInput className={styles.input_base} placeholder="Что-то для теста" />
+    </div>
   );
 }
 

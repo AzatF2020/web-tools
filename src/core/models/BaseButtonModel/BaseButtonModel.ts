@@ -1,4 +1,4 @@
-import { TButtonSize, TButtonVariant } from '@/core/models/BaseButtonModel/types';
+import type { TButtonSize, TButtonVariant } from '@/core/models/BaseButtonModel/types';
 
 class BaseButtonModel {
   label?: string;

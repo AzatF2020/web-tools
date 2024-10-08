@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-rational-order"],
+  "plugins": ["stylelint-order"],
+  "ignoreFiles": ["**/node_modules/**", "**/storybook-static**"],
+  "rules": {
+    "selector-class-pattern": null,
+    "custom-property-empty-line-before": "never"
+  }
+}
