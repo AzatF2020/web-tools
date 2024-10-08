@@ -11,18 +11,16 @@ const BaseInput: FC<IBaseInputProps> = ({
   ...props
 }) => {
   return (
-    <>
-      <input
-        type={type}
-        className={clsx(
-          styles.input,
-          styles[`input--${size}`],
-          styles[`input--${invalid && 'invalid'}`],
-          className,
-        )}
-        {...props}
-      />
-    </>
+    <input
+      type={type}
+      className={clsx(
+        styles.input,
+        styles[`input--${size}`],
+        invalid && styles['input--invalid'],
+        className,
+      )}
+      {...props}
+    />
   );
 };
 

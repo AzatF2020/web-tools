@@ -1,27 +1,27 @@
 .input {
+  margin: var(--margin-element);
   color: var(--color-text);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-h6);
-  border: 0.1rem solid var(--color-primary-600);
+  border: 0.09rem solid var(--color-primary-600);
   border-radius: 0.5rem;
   outline: none;
+  transition: box-shadow 0.15s ease-out;
 
-  &:focus {
-    border-color: var(--color-primary-700);
-  }
+  @include focus-element;
 
   &--sm {
-    padding: 0.25rem 0.5rem;
+    padding: 0.45rem 0.5rem;
     font-size: var(--font-size-h6);
   }
 
   &--md {
-    padding: 0.6rem 0.85rem;
+    padding: 0.675rem 0.85rem;
     font-size: var(--font-size-h4);
   }
 
   &--lg {
-    padding: 0.75rem 1rem;
+    padding: 0.9rem 1rem;
     font-size: var(--font-size-h2);
   }
 
@@ -31,6 +31,12 @@
 
   &--disabled {
     opacity: 0.5;
+  }
+
+  &[disabled] {
+    color: var(--color-bs-body);
+    background-color: var(--color-bs);
+    border-color: var(--color-bs-border);
   }
 
   &::placeholder {

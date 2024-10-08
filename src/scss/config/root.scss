@@ -1,4 +1,5 @@
 :root {
+  // #colors
   --color-primary-50: #e3f2ff;
   --color-primary-100: #bbdeff;
   --color-primary-200: #8dcaff;
@@ -8,12 +9,18 @@
   --color-primary-600: #1386fc;
   --color-primary-700: #1a73e8;
   --color-light-blue: #f5f9ff;
+  --color-danger: #ff5252;
   --color-secondary: #f1f5f9;
   --color-crayola: #e2e8f0;
   --color-blue-denim: #185abc;
   --color-white: #fff;
   --color-gray: #334155;
   --border-radius: 0.5rem;
+  --color-bs: #e9ecef;
+  --color-bs-border: #dee2e6;
+  --color-bs-body: #212529;
+
+  // #fonts
   --font-family: 'Afacad Flux', system-ui, sans-serif;
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -25,6 +32,9 @@
   --font-size-h3: 1.125rem;
   --font-size-h2: 1.25rem;
   --font-size-h1: 1.5rem;
+
+  // #general
   --opacity-disabled: 0.75;
   --opacity-hover: 0.85;
+  --margin-element: 0.25rem 0.125rem;
 }

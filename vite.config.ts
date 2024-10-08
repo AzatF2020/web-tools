@@ -28,6 +28,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         silenceDeprecations: ['legacy-js-api'],
+        additionalData: `@import "${path.resolve(__dirname, './src/scss/global.scss')}";`,
       },
     },
   },
