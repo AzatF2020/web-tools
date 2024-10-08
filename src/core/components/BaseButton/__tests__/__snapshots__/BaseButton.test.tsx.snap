@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button test component > should render component with props 1`] = `
+<button
+  class="button button--lg button--primary"
+  type="submit"
+>
+  Click on me
+</button>
+`;
