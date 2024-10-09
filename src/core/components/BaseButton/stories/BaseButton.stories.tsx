@@ -1,14 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta } from '@storybook/react';
+import type { TStory } from '@/core/utils/types/story';
 import type { IButtonProps } from '@/core/components/BaseButton/types/types';
 import { BaseButton } from '@/core/components/BaseButton';
 import { fn } from '@storybook/test';
 
-type Story = StoryObj<IButtonProps>;
+type TStoryButton = TStory<IButtonProps>;
 
 const meta: Meta<IButtonProps> = {
   component: BaseButton,
-  title: 'Storybook/@ui-core/Button',
-  tags: ['autodocs'],
+  title: 'Storybook/@ui-core/BaseButton',
   parameters: {
     layout: 'centered',
     componentSubtitle: 'Displays a UI Button component with different style variants.',
@@ -21,12 +21,14 @@ const meta: Meta<IButtonProps> = {
   },
 };
 
-export const Primary: Story = { args: { variant: 'primary' } };
+export const Primary: TStoryButton = { args: { variant: 'primary' } };
 
-export const Secondary: Story = { args: { variant: 'secondary' } };
+export const Secondary: TStoryButton = { args: { variant: 'secondary' } };
 
-export const Outlined: Story = { args: { variant: 'outlined' } };
+export const Outlined: TStoryButton = { args: { variant: 'outlined' } };
 
-export const Link: Story = { args: { variant: 'link' } };
+export const Link: TStoryButton = { args: { variant: 'link' } };
+
+export const Disabled: TStoryButton = { args: { variant: 'primary', disabled: true } };
 
 export default meta;

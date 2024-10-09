@@ -7,15 +7,22 @@ const BaseButton: FC<IButtonProps> = ({
   size = 'md',
   variant = 'primary',
   type = 'button',
+  loading = false,
   label,
+  children,
   ...props
 }) => {
   return (
     <button
       type={type}
-      className={clsx(styles.button, styles[`button--${size}`], styles[`button--${variant}`])}
+      className={clsx(
+        styles.button,
+        styles[`button--${size}`],
+        styles[`button--${variant}`],
+        loading && styles['button--loading'],
+      )}
       {...props}>
-      {label}
+      <span className={styles.button__label}>{label || children}</span>
     </button>
   );
 };

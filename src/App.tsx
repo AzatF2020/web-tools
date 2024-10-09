@@ -5,7 +5,7 @@ import styles from './app.module.css';
 function App() {
   return (
     <div style={{ padding: '1rem' }}>
-      <BaseButton variant="primary" label="Нажми на меня" />
+      <BaseButton variant="primary" label="Кнопка" />
       <BaseInput className={styles.input_base} placeholder="Что-то для теста" />
     </div>
   );
