@@ -1,6 +1,12 @@
-import { ButtonHTMLAttributes } from 'react';
-import BaseButtonModel from '@/core/models/BaseButtonModel/BaseButtonModel';
+import type { ButtonHTMLAttributes } from 'react';
+import { TSize, TButtonVariant } from '@/core/utils/types';
 
-interface IButtonProps extends BaseButtonModel, ButtonHTMLAttributes<HTMLButtonElement> {}
+interface IBaseButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  label?: string;
+  size?: Extract<TSize, 'sm' | 'md' | 'lg'>;
+  variant?: Extract<TButtonVariant, 'primary' | 'secondary' | 'outlined' | 'link' | 'loading'>;
+  loading?: boolean;
+  className?: string;
+}
 
-export type { IButtonProps };
+export type { IBaseButtonProps };

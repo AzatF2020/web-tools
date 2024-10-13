@@ -1,8 +1,10 @@
 import type { InputHTMLAttributes } from 'react';
-import BaseInputModel from '@/core/models/BsseInputModel/BaseInputModel';
+import type { TSize } from '@/core/utils/types';
 
-interface IBaseInputProps
-  extends BaseInputModel,
-    Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {}
+interface IBaseInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
+  invalid?: boolean;
+  size?: Extract<TSize, 'sm' | 'md' | 'lg'> | number;
+  className?: string;
+}
 
 export type { IBaseInputProps };

@@ -1,15 +1,26 @@
 import BaseButton from '../ui/BaseButton';
-import type { IButtonProps } from '@/core/components/BaseButton/types/types';
+import type { IBaseButtonProps } from '@/core/components/BaseButton/types/types';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { TButtonSize, TButtonVariant } from '@/core/models/BaseButtonModel/types';
 import { sizes, variants } from '@/core/utils/constants';
 
-const renderButton = (props: IButtonProps = { label: 'button' }) => {
+const renderButton = (props: IBaseButtonProps = { label: 'button' }) => {
   return render(<BaseButton {...props} />);
 };
 
 describe('Button test component', () => {
+  it('should render component with props', () => {
+    renderButton({
+      size: 'lg',
+      variant: 'primary',
+      type: 'submit',
+      label: 'Click on me',
+      disabled: false,
+    });
+    expect(screen.getByRole('button')).toMatchSnapshot();
+  });
+
   describe('test prop size', () => {
     test.each(sizes)('render with prop size %s', (size) => {
       renderButton({ size: size as TButtonSize });
@@ -27,17 +38,6 @@ describe('Button test component', () => {
   it('should render component', () => {
     renderButton();
     expect(screen.getByRole('button')).toBeInTheDocument();
-  });
-
-  it('should render component with props', () => {
-    renderButton({
-      size: 'lg',
-      variant: 'primary',
-      type: 'submit',
-      label: 'Click on me',
-      disabled: false,
-    });
-    expect(screen.getByRole('button')).toMatchSnapshot();
   });
 
   it('should render attribute disabled', () => {

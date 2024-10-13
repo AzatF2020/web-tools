@@ -30,7 +30,9 @@
   }
 
   &--disabled {
+    cursor: not-allowed;
     opacity: 0.5;
+    user-select: none;
   }
 
   &[disabled] {
@@ -40,6 +42,6 @@
   }
 
   &::placeholder {
-    color: var(--color-text);
+    color: var(--color-secondary-500);
   }
 }

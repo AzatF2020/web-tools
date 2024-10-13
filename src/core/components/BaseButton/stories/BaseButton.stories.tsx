@@ -1,12 +1,12 @@
 import type { Meta } from '@storybook/react';
 import type { TStory } from '@/core/utils/types/story';
-import type { IButtonProps } from '@/core/components/BaseButton/types/types';
+import type { IBaseButtonProps } from '@/core/components/BaseButton/types/types';
 import { BaseButton } from '@/core/components/BaseButton';
 import { fn } from '@storybook/test';
 
-type TStoryButton = TStory<IButtonProps>;
+type TStoryButton = TStory<IBaseButtonProps>;
 
-const meta: Meta<IButtonProps> = {
+const meta: Meta<IBaseButtonProps> = {
   component: BaseButton,
   title: 'Storybook/@ui-core/BaseButton',
   parameters: {
