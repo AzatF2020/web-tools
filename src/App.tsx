@@ -16,9 +16,8 @@ function App() {
       <BaseButton variant="primary" label="Кнопка" />
       <BaseInput className={styles.input_base} placeholder="Что-то для теста" />
       <BaseCheckbox
-        invalid
         value="test"
-        disabled
+        checked={checked}
         onChange={() => setChecked((isChecked) => (isChecked = !isChecked))}
       />
     </div>

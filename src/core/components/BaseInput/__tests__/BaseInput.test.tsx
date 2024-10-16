@@ -2,8 +2,7 @@ import { describe, it, expect, vi } from 'vitest';
 import { fireEvent, render } from '@testing-library/react';
 import { BaseInput } from '@/core/components/BaseInput';
 import { sizes } from '@/core/utils/constants';
-import type { IBaseInputProps } from '@/core/components/BaseInput/types/types';
-import type { TBaseInputSize } from '@/core/models/BsseInputModel/types';
+import type { IBaseInputProps, TBaseInputSize } from '@/core/components/BaseInput/types/types';
 
 const renderInput = (props: IBaseInputProps = { placeholder: 'Write text' }) => {
   return render(<BaseInput {...props} />);

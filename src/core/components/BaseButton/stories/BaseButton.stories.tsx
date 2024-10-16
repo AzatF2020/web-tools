@@ -6,7 +6,7 @@ import { fn } from '@storybook/test';
 
 type TStoryButton = TStory<IBaseButtonProps>;
 
-const meta: Meta<IBaseButtonProps> = {
+const meta = {
   component: BaseButton,
   title: 'Storybook/@ui-core/BaseButton',
   parameters: {
@@ -19,7 +19,7 @@ const meta: Meta<IBaseButtonProps> = {
     size: 'md',
     onClick: fn(),
   },
-};
+} satisfies Meta<IBaseButtonProps>;
 
 export const Primary: TStoryButton = { args: { variant: 'primary' } };
 

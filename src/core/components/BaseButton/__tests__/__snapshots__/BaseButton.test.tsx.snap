@@ -5,6 +5,10 @@ exports[`Button test component > should render component with props 1`] = `
   class="button button--lg button--primary"
   type="submit"
 >
-  Click on me
+  <span
+    class="button__label"
+  >
+    Click on me
+  </span>
 </button>
 `;

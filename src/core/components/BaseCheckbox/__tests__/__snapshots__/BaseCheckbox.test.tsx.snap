@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BaseCheckbox test component > should render with props 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      aria-checked="true"
+      aria-invalid="true"
+      checked=""
+      class="checkbox__component"
+      role="checkbox"
+      type="checkbox"
+      value="checkbox testing"
+    />
+    <span
+      class="checkbox__checkmark checkbox__checkmark--invalid"
+    />
+  </div>
+</div>
+`;

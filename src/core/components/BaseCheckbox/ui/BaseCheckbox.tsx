@@ -26,8 +26,11 @@ const BaseCheckbox = forwardRef<HTMLInputElement, IBaseCheckboxProps>(
           disabled={disabled}
           onChange={onChange}
           type="checkbox"
+          role="checkbox"
           ref={ref}
           className={clsx(styles.checkbox__component)}
+          aria-invalid={invalid}
+          aria-checked={checked}
         />
         <span
           className={clsx(

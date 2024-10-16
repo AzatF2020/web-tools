@@ -1,8 +1,11 @@
 import BaseButton from '../ui/BaseButton';
-import type { IBaseButtonProps } from '@/core/components/BaseButton/types/types';
+import type {
+  IBaseButtonProps,
+  TButtonSize,
+  TButtonVariant,
+} from '@/core/components/BaseButton/types/types';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { TButtonSize, TButtonVariant } from '@/core/models/BaseButtonModel/types';
 import { sizes, variants } from '@/core/utils/constants';
 
 const renderButton = (props: IBaseButtonProps = { label: 'button' }) => {

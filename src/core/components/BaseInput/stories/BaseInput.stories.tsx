@@ -4,7 +4,7 @@ import type { TStory } from '@/core/utils/types/story';
 import type { IBaseInputProps } from '@/core/components/BaseInput/types/types';
 import type { Meta } from '@storybook/react';
 
-const meta: Meta<IBaseInputProps> = {
+const meta = {
   component: BaseInput,
   title: 'Storybook/@ui-core/BaseInput',
   parameters: {
@@ -26,7 +26,7 @@ const meta: Meta<IBaseInputProps> = {
     value: 'Some value',
     placeholder: 'Write some text...',
   },
-};
+} satisfies Meta<IBaseInputProps>;
 
 export const Small: TStory<IBaseInputProps> = { args: { size: 'sm' } };
 

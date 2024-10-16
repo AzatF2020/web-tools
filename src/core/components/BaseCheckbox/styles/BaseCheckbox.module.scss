@@ -28,8 +28,8 @@
     display: block;
     width: inherit;
     height: inherit;
-    border-radius: var(--checkbox-br);
     border: 0.1rem solid var(--color-bs-border);
+    border-radius: var(--checkbox-br);
   }
 
   &__checkmark--invalid {
@@ -44,11 +44,10 @@
   &__checkmark::after {
     position: absolute;
     opacity: 0;
-    content: '';
-
     transition:
       0.3s opacity ease,
       0.3s transform ease;
+    content: '';
   }
 
   &__component:checked ~ &__checkmark {
