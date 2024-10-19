@@ -21,6 +21,12 @@ const meta = {
   },
 } satisfies Meta<IBaseButtonProps>;
 
+export const Small: TStoryButton = { args: { size: 'sm' } };
+
+export const Medium: TStoryButton = { args: { size: 'md' } };
+
+export const Large: TStoryButton = { args: { size: 'lg' } };
+
 export const Primary: TStoryButton = { args: { variant: 'primary' } };
 
 export const Secondary: TStoryButton = { args: { variant: 'secondary' } };

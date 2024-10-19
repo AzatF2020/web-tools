@@ -1,0 +1,27 @@
+.radioItem {
+  position: relative;
+  width: var(--radio-item-w);
+  height: var(--radio-item-h);
+
+  &__component {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__box {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: solid var(--color-primary-600);
+    border-width: var(--radio-item-bw);
+    border-radius: var(--radio-item-br);
+    transition: border-color 0.15s ease-out;
+  }
+}

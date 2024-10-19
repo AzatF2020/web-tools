@@ -38,4 +38,6 @@ export const Invalid: TStory<IBaseInputProps> = { args: { size: 'md', invalid: t
 
 export const Disabled: TStory<IBaseInputProps> = { args: { size: 'md', disabled: true } };
 
+export const WithoutValue: TStory<IBaseInputProps> = { args: { size: 'md', value: '' } };
+
 export default meta;
